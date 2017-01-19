@@ -57,7 +57,6 @@ func main () {
   fmt.Printf("Using address \"%s\" and salt \"%s\"\n", address, saltValue)
 
   tries := 0
-  start := time.Now()
   for {
     passphraseValue := RandStringBytesMaskImprSrc(8)
     bruteforce(passphraseValue, saltValue, address);
