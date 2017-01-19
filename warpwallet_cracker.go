@@ -62,7 +62,6 @@ func main () {
     passphraseValue := RandStringBytesMaskImprSrc(8)
     bruteforce(passphraseValue, saltValue, address);
     tries += 1
-    fmt.Printf("\rTried %d passphrases in %s [last passphrase: %s]", tries, time.Since(start), passphraseValue)
   }
 }
 
